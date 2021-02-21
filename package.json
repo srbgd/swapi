@@ -10,11 +10,10 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@ijl/cli": "^2.5.6",
-		"babel-loader": "^8.2.2",
-		"express": "^4.17.1",
-		"stream-http": "^3.1.1"
+		"express": "^4.17.1"
 	},
 	"dependencies": {
+		"@types/react": "^17.0.2",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1"
 	}

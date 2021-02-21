@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './app'
 
 export default {}
 
 export const mount = (Component) => {
 	ReactDOM.render(
-		<h1>Test</h1>,
+		<App />,
 		document.getElementById('app')
 	)
 }
