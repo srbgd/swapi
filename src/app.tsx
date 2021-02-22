@@ -1,4 +1,5 @@
 import React from 'react'
+import API from './api'
 
 class Goto extends React.Component<any, any> {
     render() {
@@ -67,20 +68,86 @@ class Data extends React.Component<any, any> {
     }
 }
 
-class Films extends React.Component<any, any> {
+class Links extends React.Component<any, any> {
+
+    get_location(url){
+        const s = url.split('/').reverse();
+        return '/' + s[2] + '/' + s[1];
+    }
+
+    get_name(url){
+        const s = url.split('/').reverse();
+        const result = API[s[2]][s[1]][(s[2] == 'films') ? 'title' : 'name']
+        return result
+    }
+
     render() {
-        const data = [
-            {k: 'AAA', v: '123'},
-            {k: 'BBB', v: '456'},
-            {k: 'CCC', v: '789'}
-        ]
-        console.log(this.props.App)
+        console.log(this.props.links)
+        return (
+            <div>
+                {this.props.links.map( (e) => 
+                    {return (
+                        <div>
+                            <p>{e.n}: </p>
+                            {
+                                e.l.length == 0 ? 'None'
+                                : e.l.map( (link) => {
+                                    return (
+                                        <Goto 
+                                        l={this.get_location(link)}
+                                        n={this.get_name(link)}
+                                        App={this.props.App}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                    )}
+                )}
+            </div>
+      )  
+    }
+}
+
+class Films extends React.Component<any, any> {
+
+    get_id(){
+        let l = this.props.App.state.location
+        return l.substr(l.indexOf('/', 1) + 1)
+    }
+
+    render() {
+        const id = this.get_id()
+        const j = API.films[id]
         return (
             <div>
                 <Header App={this.props.App} />
-                <Data data={data} App={this.props.App} />
+                {
+                    (parseInt(id) > 0 && parseInt(id) < 7) &&
+                        <div>
+                            <Data 
+                            data={[
+                                {k: 'Title', v: j['title']},
+                                {k: 'Episode', v: j['episode_id']},
+                                {k: 'Opening crawl', v: j['opening_crawl']},
+                                {k: 'Release date', v: j['release_date']},
+                                {k: 'Director', v: j['director']},
+                                {k: 'Producer', v: j['producer']}
+                            ]} 
+                            App={this.props.App} />
+                            <Links
+                            links={[
+                                {l: j['species'], n: 'Species'},
+                                {l: j['starships'], n: 'Starships'},
+                                {l: j['vehicles'], n: 'Vehicles'},
+                                {l: j['characters'], n: 'Characters'},
+                                {l: j['planets'], n: 'Planets'},
+                            ]}
+                            App={this.props.App} />
+                        </div>
+                }
             </div>
-      )  
+      )
     }
 }
 
