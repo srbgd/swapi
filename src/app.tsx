@@ -36,6 +36,7 @@ class App extends React.Component<any, any> {
         let page = mapping[s]
         return (
             <div>
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"></link>
                 <p>App Location: {this.state.location}</p>
                 {page}
             </div>
