@@ -6,6 +6,7 @@ import Starships from './starships'
 import Vehicles from './vehicles'
 import Species from './species'
 import People from './people'
+import './index.css'
 
 class App extends React.Component<any, any> {
     constructor(props, state) {
