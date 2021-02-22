@@ -59,12 +59,9 @@ class Header extends React.Component<any, any> {
 
 class Data extends React.Component<any, any> {
     render() {
-        console.log(this.props.data)
-        let listData = this.props.data.map( (e) => {return <p>{e.k}: {e.v}</p>} )
-        console.log(listData)
         return (
             <div>
-                {listData}
+                {this.props.data.map( (e) => {return <p key={e.k}>{e.k}: {e.v}</p>} )}
             </div>
       )  
     }
@@ -115,4 +112,4 @@ class App extends React.Component<any, any> {
     }
 }
   
-  export default App;
+export default App;
