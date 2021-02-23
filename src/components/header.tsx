@@ -17,13 +17,12 @@ class Header extends React.Component<any, any> {
         let location = this.props.App.state.location
         return (
             <div>
-                <p>Page Location: {location}</p>
                 {
                     location != '/' &&
                     <div>
-                        <Goto l={this.next(location)} n='Next' App={this.props.App} /><br/>
-                        <Goto l={this.back(location)} n='Back' App={this.props.App} /><br/>
-                        <Goto l='/' n='Main' App={this.props.App} /><br/>
+                        <Goto l={this.next(location)} n='Next' App={this.props.App} />
+                        <Goto l={this.back(location)} n='Back' App={this.props.App} />
+                        <Goto l='/' n='Main' App={this.props.App} />
                     </div>
                 }
             </div>

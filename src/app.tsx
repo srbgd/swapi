@@ -1,11 +1,11 @@
 import React from 'react'
-import Main from './main'
-import Films from './films'
-import Planets from './planets'
-import Starships from './starships'
-import Vehicles from './vehicles'
-import Species from './species'
-import People from './people'
+import Main from './components/main'
+import Films from './components/films'
+import Planets from './components/planets'
+import Starships from './components/starships'
+import Vehicles from './components/vehicles'
+import Species from './components/species'
+import People from './components/people'
 import './index.css'
 
 class App extends React.Component<any, any> {
