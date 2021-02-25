@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from  '../components/page'
+import Page from  './page'
 
 class Starships extends React.Component<any, any> {
     render() {

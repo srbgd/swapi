@@ -19,20 +19,19 @@ class Links extends React.Component<any, any> {
     }
 
     render() {
-        console.log(this.props.links)
         return (
             <div>
                 {this.props.links.map( (e) => 
                     {return (
-                        <div>
+                        <div key={e.n}>
                             <p>{e.n}: </p>
                             {
                                 e.l.length == 0 ? 'None'
                                 : e.l.map( (link) => {
                                     return this.get_name(link) != null ?
                                         (
-                                        
-                                            <Goto 
+                                            <Goto
+                                            key={link}
                                             l={this.get_location(link)}
                                             n={this.get_name(link)}
                                             App={this.props.App}

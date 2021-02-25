@@ -15,7 +15,7 @@ class App extends React.Component<any, any> {
         this.state = {location: '/'};
     }
 
-    setLocation(l){
+    setLocation(l) {
         this.setState({location: l});
     }
 
