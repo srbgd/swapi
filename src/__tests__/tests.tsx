@@ -13,6 +13,7 @@ import Starships from '../components/starships'
 import Vehicles from '../components/vehicles'
 import Species from '../components/species'
 import People from '../components/people'
+import Main from '../components/main'
 
 import App from './__mocks__/mockApp'
 
@@ -48,7 +49,7 @@ const links = [
 ]
 
 describe('simple test', () => {
-    
+
     it('test that jest works', () => {
         expect(true).toBe(true)
     })
@@ -180,6 +181,11 @@ describe('simple test', () => {
 
     it('test vehicles component', () => {
         const component = mount(<Vehicles App={app} />)
+        expect(component).toMatchSnapshot();
+    })
+
+    it('test main component', () => {
+        const component = mount(<Main App={app} />)
         expect(component).toMatchSnapshot();
     })
 

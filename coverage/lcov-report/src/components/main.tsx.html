@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/starships.tsx</title>
+    <title>Code coverage report for src/components/main.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> starships.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> main.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -76,15 +76,7 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -103,42 +95,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
-import Page from  './page'
+import Goto from './goto'
 &nbsp;
-class Starships extends React.Component&lt;any, any&gt; {
+class Main extends React.Component&lt;any, any&gt; {
     render() {
         return (
-                &lt;Page
-                data={[
-                    {k: 'Name', v: 'name'},
-                    {k: 'Model', v: 'model'},
-                    {k: 'Starship class', v: 'starship_class'},
-                    {k: 'Length', v: 'length'},
-                    {k: 'Passengers', v: 'passengers'},
-                    {k: 'Crew', v: 'crew'}
-                ]}
-                links={[
-                    {l: 'pilots', n: 'Pilots'},
-                    {l: 'films', n: 'Films'}
-                ]}
-                App={this.props.App}
-                maxCount={37} 
-                resource='starships'   
-                /&gt;
-            )
+            &lt;div&gt;
+                &lt;p&gt;Resources:&lt;/p&gt;
+                &lt;Goto l='/films/1' n='Films' App={this.props.App} /&gt;&lt;br/&gt;
+                &lt;Goto l='/people/1' n='People' App={this.props.App} /&gt;&lt;br/&gt;
+                &lt;Goto l='/planets/1' n='Planets' App={this.props.App} /&gt;&lt;br/&gt;
+                &lt;Goto l='/species/1' n='Species' App={this.props.App} /&gt;&lt;br/&gt;
+                &lt;Goto l='/starships/2' n='Starships' App={this.props.App} /&gt;&lt;br/&gt;
+                &lt;Goto l='/vehicles/4' n='Vehicles' App={this.props.App} /&gt;&lt;br/&gt;
+            &lt;/div&gt;
+        )
     }
 }
 &nbsp;
-export default Starships</pre></td></tr></table></pre>
+export default Main</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

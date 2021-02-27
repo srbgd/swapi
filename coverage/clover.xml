@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614398811328" clover="3.2.0">
-  <project timestamp="1614398811328" name="All files">
-    <metrics statements="33" coveredstatements="32" conditionals="14" coveredconditionals="14" methods="22" coveredmethods="21" elements="69" coveredelements="67" complexity="0" loc="33" ncloc="33" packages="2" files="12" classes="12"/>
+<coverage generated="1614399206268" clover="3.2.0">
+  <project timestamp="1614399206268" name="All files">
+    <metrics statements="34" coveredstatements="33" conditionals="14" coveredconditionals="14" methods="23" coveredmethods="22" elements="71" coveredelements="69" complexity="0" loc="34" ncloc="34" packages="2" files="13" classes="13"/>
     <package name="src">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="api.ts" path="/arh/inno/js/retake/swapi/src/api.ts">
@@ -10,7 +10,7 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="32" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="22" coveredmethods="21"/>
+      <metrics statements="33" coveredstatements="32" conditionals="14" coveredconditionals="14" methods="23" coveredmethods="22"/>
       <file name="data.tsx" path="/arh/inno/js/retake/swapi/src/components/data.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="5" count="2" type="stmt"/>
@@ -22,7 +22,7 @@
       </file>
       <file name="goto.tsx" path="/arh/inno/js/retake/swapi/src/components/goto.tsx">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="5" count="85" type="stmt"/>
+        <line num="5" count="91" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
       </file>
       <file name="header.tsx" path="/arh/inno/js/retake/swapi/src/components/header.tsx">
@@ -45,6 +45,10 @@
         <line num="22" count="5" type="stmt"/>
         <line num="25" count="13" type="stmt"/>
         <line num="31" count="57" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="main.tsx" path="/arh/inno/js/retake/swapi/src/components/main.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
       <file name="page.tsx" path="/arh/inno/js/retake/swapi/src/components/page.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
