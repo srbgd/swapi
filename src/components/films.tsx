@@ -20,8 +20,8 @@ class Films extends React.Component<any, any> {
                     {l: 'planets', n: 'Planets'}
                 ]}
                 App={this.props.App}
-                maxCount={7} 
-                resource='films'   
+                maxCount={7}
+                resource='films'  
                 />
             )
     }

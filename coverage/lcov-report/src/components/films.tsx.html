@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/header.tsx</title>
+    <title>Code coverage report for src/components/films.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> header.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> films.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -86,27 +86,21 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,38 +116,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
-import Goto from './goto'
+import Page from  './page'
 &nbsp;
-class Header extends React.Component&lt;any, any&gt; {
-&nbsp;
-    next(l) {
-        let n = l.indexOf('/', 1)
-        return l.substr(0, n) + '/' + (parseInt(l.substr(n + 1)) + 1)
-    }
-&nbsp;
-    back(l) {
-        let n = l.indexOf('/', 1)
-        return l.substr(0, n) + '/' + (parseInt(l.substr(n + 1)) - 1)
-    }
-&nbsp;
+class Films extends React.Component&lt;any, any&gt; {
     render() {
-        let location = this.props.App.state.location
         return (
-            &lt;div&gt;
-                {
-                    location != '/' &amp;&amp;
-                    &lt;div&gt;
-                        &lt;Goto l={this.next(location)} n='Next' App={this.props.App} /&gt;
-                        &lt;Goto l={this.back(location)} n='Back' App={this.props.App} /&gt;
-                        &lt;Goto l='/' n='Main' App={this.props.App} /&gt;
-                    &lt;/div&gt;
-                }
-            &lt;/div&gt;
-      )  
+                &lt;Page
+                data={[
+                    {k: 'Title', v: 'title'},
+                    {k: 'Episode', v: 'episode_id'},
+                    {k: 'Opening crawl', v: 'opening_crawl'},
+                    {k: 'Release date', v: 'release_date'},
+                    {k: 'Producer', v: 'producer'}
+                ]}
+                links={[
+                    {l: 'species', n: 'Species'},
+                    {l: 'vehicles', n: 'Vehicles'},
+                    {l: 'starships', n: 'Starships'},
+                    {l: 'characters', n: 'Characters'},
+                    {l: 'planets', n: 'Planets'}
+                ]}
+                App={this.props.App}
+                maxCount={7}
+                resource='films'  
+                /&gt;
+            )
     }
 }
 &nbsp;
-export default Header</pre></td></tr></table></pre>
+export default Films</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

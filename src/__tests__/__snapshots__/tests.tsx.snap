@@ -2,4 +2,28 @@
 
 exports[`simple test test data component 1`] = `ReactWrapper {}`;
 
+exports[`simple test test films component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test goto component snapshot 1`] = `ReactWrapper {}`;
+
 exports[`simple test test header component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test links component snapshot 1`] = `ReactWrapper {}`;
+
+exports[`simple test test links component zero length 1`] = `ReactWrapper {}`;
+
+exports[`simple test test links incorrect component snapshot 1`] = `ReactWrapper {}`;
+
+exports[`simple test test page component correct film 1`] = `ReactWrapper {}`;
+
+exports[`simple test test page component incorrect 1`] = `ReactWrapper {}`;
+
+exports[`simple test test people component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test planets component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test species component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test starships component 1`] = `ReactWrapper {}`;
+
+exports[`simple test test vehicles component 1`] = `ReactWrapper {}`;

@@ -3,12 +3,12 @@ import Goto from './goto'
 
 class Header extends React.Component<any, any> {
 
-    next(l){
+    next(l) {
         let n = l.indexOf('/', 1)
         return l.substr(0, n) + '/' + (parseInt(l.substr(n + 1)) + 1)
     }
 
-    back(l){
+    back(l) {
         let n = l.indexOf('/', 1)
         return l.substr(0, n) + '/' + (parseInt(l.substr(n + 1)) - 1)
     }
