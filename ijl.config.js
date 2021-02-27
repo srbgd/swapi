@@ -1,10 +1,10 @@
-const pkg = require("./package.json");
+const pkg = require('./package.json');
 
 module.exports = {
-  apiPath: "stubs/api",
+  apiPath: 'stubs/api',
   webpackConfig: {
     output: {
-      publicPath: "/static/swapi/1.0.0/"
+      publicPath: '/static/swapi/1.0.0/'
     }
   },
   config: {
@@ -14,7 +14,7 @@ module.exports = {
     swapi: { name: 'swapi', version: '1.0.0' }
   },
   navigations: {
-    swapi: "/swapi"
+    swapi: '/swapi'
   }
 };
 

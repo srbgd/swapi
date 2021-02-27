@@ -1,9 +1,8 @@
 const router = require('express').Router()
-const path = require("path");
-const fs = require("fs");
+const API = require('./api.js');
 
-const retrive = (folder, file) => {
-    JSON.parse(fs.readFileSync(path.resolve(__dirname, path.resolve(folder, file + '.json'))))
+const retrive = (resource, id) => {
+    return resource in API ? API[resource][id] : null
 }
 
 router.get('/films/:id', (req, res) => {

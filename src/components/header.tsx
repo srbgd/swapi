@@ -20,8 +20,8 @@ class Header extends React.Component<any, any> {
                 {
                     location != '/' &&
                     <div>
-                        <Goto l={this.next(location)} n='Next' App={this.props.App} />
                         <Goto l={this.back(location)} n='Back' App={this.props.App} />
+                        <Goto l={this.next(location)} n='Next' App={this.props.App} />
                         <Goto l='/' n='Main' App={this.props.App} />
                     </div>
                 }

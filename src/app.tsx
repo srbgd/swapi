@@ -9,6 +9,9 @@ import People from './components/people'
 import './index.css'
 
 class App extends React.Component<any, any> {
+
+    mapping: any
+
     constructor(props, state) {
         super(props);
         this.setLocation = this.setLocation.bind(this);

@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`simple test test data component 1`] = `ReactWrapper {}`;
+exports[`base test suite test data component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test films component 1`] = `ReactWrapper {}`;
+exports[`base test suite test films component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test goto component snapshot 1`] = `ReactWrapper {}`;
+exports[`base test suite test goto component snapshot 1`] = `ReactWrapper {}`;
 
-exports[`simple test test header component 1`] = `ReactWrapper {}`;
+exports[`base test suite test header component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test links component snapshot 1`] = `ReactWrapper {}`;
+exports[`base test suite test links component snapshot 1`] = `ReactWrapper {}`;
 
-exports[`simple test test links component zero length 1`] = `ReactWrapper {}`;
+exports[`base test suite test links component zero length 1`] = `ReactWrapper {}`;
 
-exports[`simple test test links incorrect component snapshot 1`] = `ReactWrapper {}`;
+exports[`base test suite test links incorrect component snapshot 1`] = `ReactWrapper {}`;
 
-exports[`simple test test main component 1`] = `ReactWrapper {}`;
+exports[`base test suite test main component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test page component correct film 1`] = `ReactWrapper {}`;
+exports[`base test suite test page component correct film 1`] = `ReactWrapper {}`;
 
-exports[`simple test test page component incorrect 1`] = `ReactWrapper {}`;
+exports[`base test suite test page component incorrect 1`] = `ReactWrapper {}`;
 
-exports[`simple test test people component 1`] = `ReactWrapper {}`;
+exports[`base test suite test people component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test planets component 1`] = `ReactWrapper {}`;
+exports[`base test suite test planets component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test species component 1`] = `ReactWrapper {}`;
+exports[`base test suite test species component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test starships component 1`] = `ReactWrapper {}`;
+exports[`base test suite test starships component 1`] = `ReactWrapper {}`;
 
-exports[`simple test test vehicles component 1`] = `ReactWrapper {}`;
+exports[`base test suite test vehicles component 1`] = `ReactWrapper {}`;

@@ -48,7 +48,7 @@ const links = [
     n: "Test films"}
 ]
 
-describe('simple test', () => {
+describe('base test suite', () => {
 
     it('test that jest works', () => {
         expect(true).toBe(true)
